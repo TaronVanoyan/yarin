@@ -1,0 +1,40 @@
+@import "../vendor/less-space/less-space";
+
+textarea:-webkit-autofill,
+select:-webkit-autofill,
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+  &:hover, &:focus, &:active {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+  }
+}
+
+table.table-bordered.dataTable {
+  th, td {
+    &:last-child {
+      border-right-width: 1px;
+    }
+  }
+}
+
+td, th {
+  &.width-xxs {
+    width: 20px;
+  }
+  &.width-md {
+    width: 165px;
+  }
+}
+
+.login-content {
+  .form-control {
+    border-width: 1px;
+  }
+  .has-error {
+    .form-control {
+      border-color: #ab1717;
+    }
+  }
+}
